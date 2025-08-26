@@ -26,6 +26,7 @@ import ResetPasswordpage from "./pages/ResetPasswordpage.jsx";
 import PortalPage from "./pages/PortalPage.jsx";
 import SingleServicePage from "./pages/SingleServicePage.jsx";
 import BusinessHubPage from "./pages/BusinessHubPage.jsx";
+import BusinessHubPage from "./pages/BusinessHubPage.jsx";
 const ResetScroll = ({ children }) => {
   const location = useLocation();
   React.useEffect(() => {
@@ -70,6 +71,7 @@ const App = () => {
           <Route path="services" element={<ServicesPage />} />
           <Route path="services/:serviceSlug" element={<SingleServicePage />} />
           <Route path="portal" element={<PortalPage />} />
+          <Route path="business-hub" element={<BusinessHubPage />} />
           <Route path="business-hub" element={<BusinessHubPage />} />
           {/* <Route path="store" element={<StorePage />} /> */}
         </Routes>
